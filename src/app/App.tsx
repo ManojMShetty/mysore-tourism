@@ -3,6 +3,7 @@ import { Navbar } from '@/app/components/Navbar';
 import { Home } from '@/app/components/Home';
 import { Gallery } from '@/app/components/Gallery';
 import { Contact } from '@/app/components/Contact';
+import { Chatbot } from "@/app/components/Chatbot";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Chatbot />
       </div>
     </BrowserRouter>
   );
